@@ -34,13 +34,13 @@ task sourceJar(type: Jar) {
     description = "Create a JAR with all sources"
     from sourceSets.main.allSource
     from sourceSets.test.allSource
-    classifier = 'sources'
+    getArchiveClassifier().set('sources')
 }
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
     description = "Create a JAR with the JavaDoc for the java sources"
     from javadoc.destinationDir
-    classifier = 'javadoc'
+    getArchiveClassifier().set('javadoc')
 }
 
 javadoc {
