@@ -1,6 +1,6 @@
 java {
-    sourceCompatibility(JavaVersion.VERSION_1_8)
-    targetCompatibility(JavaVersion.VERSION_1_8)
+    sourceCompatibility(JavaVersion.VERSION_16)
+    targetCompatibility(JavaVersion.VERSION_16)
 }
 
 // We use both Maven Central and our own Artifactory instance, which contains module builds, extra libs, and so on
